@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  user-select: none;
 }
 .top-buttom-margin {
   margin: 2.8rem 0;
@@ -13,9 +14,8 @@
   top: 0;
   left: 0;
   z-index: 100;
-  height: 11vh;
-  background-color: #ffffffd6;
-  backdrop-filter: blur(10px);
+  background-color: #0000009b;
+  backdrop-filter: blur(3px);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -35,8 +35,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 600;
-  color: #221717;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   cursor: pointer;
@@ -45,6 +43,8 @@
   font-size: 1.4rem;
   margin: 0rem;
   font-weight: 600;
+  color: rgba(246, 202, 6, 0.888);
+  font-family: "Story Script", sans-serif;
 }
 .logo img {
   width: 3.4rem;
@@ -61,11 +61,67 @@
 }
 .nav-section a {
   font-size: 0.9rem;
-  padding-right: 0.9rem;
+  padding-right: 1rem;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
-  color: #221717;
+  color: #e9e3e3eb;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-section a:hover {
+  color: rgba(232, 211, 23, 0.792);
+}
+/* nav-right button */
+.nav-section .btn {
+  color: rgba(0, 0, 0, 0.888);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.4rem 1.2rem;
+  margin: 0 0.4rem;
+}
+.nav-section .btn:hover {
+  background-color: rgba(211, 145, 39, 0.792);
+  color: #383333;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+.nav-section .btn:active {
+  background-color: rgba(148, 137, 38, 0.792);
+  color: #383333;
+
+  border: none;
+}
+/* animation  */
+.ani {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slider 1.3s ease forwards;
+}
+@keyframes slider {
+  0% {
+    transform: translateY(39px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.ani2 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slide 6s ease forwards;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    backdrop-filter: blur(10px);
+  }
+  100% {
+    opacity: 1.3;
+    backdrop-filter: blur(0px);
+  }
 }
 
 /* hero section  */
@@ -85,13 +141,13 @@
 }
 /* background-viedo  */
 .background-viedo video {
-  position: absolute;
-  top: 10vh;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: -100;
 }
 
 /*  text and buttons on video section  style */
