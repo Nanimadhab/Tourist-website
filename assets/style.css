@@ -96,22 +96,24 @@
 .ani {
   opacity: 0;
   transform: translateY(30px);
-  animation: slider 1.3s ease forwards;
+  animation: slider 13s ease forwards;
 }
 @keyframes slider {
   0% {
     transform: translateY(39px);
+    backdrop-filter: blur(10px);
     opacity: 0;
   }
   100% {
     transform: translateY(0);
+    backdrop-filter: blur(0px);
     opacity: 1;
   }
 }
 .ani2 {
   opacity: 0;
   transform: translateY(30px);
-  animation: slide 6s ease forwards;
+  animation: slide 4s ease forwards;
 }
 @keyframes slide {
   0% {
