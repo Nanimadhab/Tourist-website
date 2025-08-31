@@ -43,7 +43,7 @@
   font-size: 1.4rem;
   margin: 0rem;
   font-weight: 600;
-  color: rgba(246, 202, 6, 0.888);
+  color: rgba(24, 202, 36, 0.821);
   font-family: "Story Script", sans-serif;
 }
 .logo img {
@@ -70,7 +70,7 @@
 }
 
 .nav-section a:hover {
-  color: rgba(232, 211, 23, 0.792);
+  color: rgba(24, 202, 36, 0.821);
 }
 /* nav-right button */
 .nav-section .btn {
@@ -79,10 +79,12 @@
   font-weight: 600;
   padding: 0.4rem 1.2rem;
   margin: 0 0.4rem;
+  background-color: rgba(24, 202, 36, 0.821);
+  border: none;
 }
 .nav-section .btn:hover {
-  background-color: rgba(211, 145, 39, 0.792);
-  color: #383333;
+  background-color: rgba(25, 159, 32, 0.821);
+  color: #281515;
   transition: 0.3s ease-in-out;
   border: none;
 }
@@ -158,7 +160,7 @@
   margin-bottom: 1.3rem;
   text-transform: capitalize;
   letter-spacing: 0.2rem;
-  color: rgba(232, 211, 23, 0.792);
+  color: rgba(24, 202, 36, 0.821);
 }
 .background-viedo h1 {
   font-size: 3rem;
@@ -201,10 +203,55 @@
 .chenging-left:hover {
   background-color: #0e0d0de6;
   transition: 0.3s ease-in-out;
-  border: 1px solid rgba(232, 211, 23, 0.792);
+  border: 1px solid rgba(24, 202, 36, 0.821);
 }
 .chenging-right:hover {
   background-color: #0e0d0de6;
   transition: 0.3s ease-in-out;
-  border: 1px solid rgba(232, 211, 23, 0.792);
+  border: 1px solid rgba(24, 202, 36, 0.821);
+}
+.content-first-card-section {
+  z-index: 1;
+  position: relative;
+  padding: 20px;
+  background-color: rgb(236, 219, 219);
+}
+/* card  */
+.card {
+  border: none;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-head-one {
+  font-size: 1.8rem;
+  padding-bottom: 2rem !important;
+  font-family: "plus jakarta sans", sans-serif;
+  color: #240303eb;
+}
+.card-head-one b {
+  font-size: 3rem;
+  color: rgba(24, 202, 36, 0.821);
+  font-family: "Story Script", sans-serif;
+}
+.card-img-top {
+  width: 100%;
+  height: 19rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+.card-body {
+  padding: 0.5rem;
+  text-align: center;
+}
+.card-text {
+  font-family: "plus jakarta sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #240303eb;
 }
