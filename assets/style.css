@@ -275,3 +275,22 @@
     scale: 1;
   }
 }
+
+/* footer  */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgba(24, 202, 36, 0.821);
+  text-decoration: underline;
+}
