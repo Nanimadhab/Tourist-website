@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- tab logo  link -->
-    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="shortcut icon" href="assets/fabicon.io/favicon.ico" />
 
     <!-- fontawsome link -->
     <link
@@ -28,27 +28,74 @@
     />
     <!-- style link -->
     <link rel="stylesheet" href="assets/style.css" />
-    <title>Trustweb page</title>
+    <title>RACK NOX</title>
   </head>
   <body>
     <!-- head section  -->
     <header>
-      <!-- nav section  -->
-      <div class="nav">
-        <!-- nav logo content  -->
+      <div class="nav container-fluid">
         <div class="content">
+          <!-- Logo -->
           <div class="logo">
             <img src="assets/image/logo.png" alt="logo" />
-            <h2>Touristweb</h2>
+            <h2>RACK NOX</h2>
           </div>
 
-          <!-- nav section content  -->
-          <div class="nav-section">
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#" class="btn btn-warning">Explore</a></li>
+          <!-- Sidebar / Navigation Menu -->
+          <div id="nav-section">
+            <i id="close" class="fa-solid fa-xmark"></i>
+            <div class="logo side-logo">
+              <img src="assets/image/logo.png" alt="logo" />
+              <h2>RACK NOX</h2>
+            </div>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html" class="btn btn-warning">Explore</a></li>
+
+            <div class="container nav-location">
+              <h2>
+                <b>Contact Us </b>
+              </h2>
+
+              <li>
+                <i class="fa-solid fa-map-location-dot"></i>
+
+                <a
+                  href="https://www.google.com/maps/place/M.R.I+ENTERPRISE+%7C+Stainless+Steel+Railing+shop+In+Kolkata/@22.5962482,88.4597748,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMBE0zzDO4dKezoUsP0Li5ELneKm9cPyUZ5PUdh!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fp%2FAF1QipMBE0zzDO4dKezoUsP0Li5ELneKm9cPyUZ5PUdh%3Dw86-h152-k-no!7i720!8i1280!4m7!3m6!1s0x3a0275ac2baf5269:0x10140fd143afeb90!8m2!3d22.5962002!4d88.4597294!10e5!16s%2Fg%2F11pgsbqp1v?hl=en&entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                >
+                  get direction
+                  <!-- M.R.I ENTERPRISE | Stainless Steel Railing shop In Kolkata -->
+                </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+
+                <a
+                  href="https://wa.me/918697575839
+"
+                  target="_blank"
+                >
+                  8697575839
+                </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+
+                <a href="https://google.com" target="_blank">get gmail </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                <a href="contact.html">9:30 - 10:30</a>
+              </li>
+            </div>
+          </div>
+
+          <!-- Hamburger Icon -->
+          <div class="three-bar">
+            <i id="bars" class="fa-solid fa-bars"></i>
           </div>
         </div>
       </div>
@@ -59,23 +106,31 @@
         <div class="background-viedo">
           <!-- background-viedo  -->
           <video
-            class="ani2"
+            class="hero-video"
             autoplay=""
             loop=""
             muted=""
-            src="assets/video/background.mp4"
+            src="assets/video/background1.mp4"
             type="video/mp4"
           ></video>
 
           <!-- text and buttons on video section -->
           <div class="ani">
             <p>Explore India with Our package</p>
-            <h1>Explore india</h1>
-            <h1>festivals & culture</h1>
+            <h1>premium stainless</h1>
+            <h1>steel railngs & grills</h1>
           </div>
           <span class="ani2">
-            <a href="#" class="btn btn-success">contact us</a>
-            <a href="#" class="btn btn-outline-success">packages</a>
+            <a href="contact.html" class="btn btn-success chenge-color"
+              >contact us</a
+            >
+            <a
+              href="https://wa.me/918697575839
+"
+              target="_blank"
+              class="btn btn-outline-success chenge-color tr"
+              >get WhatsApp</a
+            >
           </span>
 
           <!-- left right chenging icons -->
@@ -86,8 +141,10 @@
 
       <!--  card section  -->
       <section class="content-first-card-section">
-        <div class="container mt-5 mb-2 p-4">
-          <h2 class="card-head-one">Most <b>Popular Tour</b> in india</h2>
+        <div class="container mt-5 mb-2">
+          <h2 class="card-head-one text-start">
+            our <b>Popular services</b> in india
+          </h2>
           <div
             class="row row-cols-2 row-cols-md-3 row-cols-lg-4 animationscrol"
           >
@@ -125,78 +182,58 @@
 
       <!-- card-text-section  -->
       <section class="content-first-card-section">
-        <div class="container mt-5 mb-5 p-4">
+        <div class="container mt-5 mb-5">
           <div class="row g-4 animationscrol">
-            <div class="col-md-6" style="height: 23rem; overflow: hidden">
-              <img
-                src="assets/image/pta.png"
-                alt=""
-                style="height: 100%; width: 100%"
-              />
+            <h2 class="card-head-one text-start">
+              <b>About RACK NOX Enterprise</b>
+            </h2>
+            <div class="col col-sm-12 col-md-5 p-4 card-texted">
+              <img src="assets/image/pta.png" alt="" />
             </div>
-            <div class="col-md-6" style="height: 22rem">
+            <div class="col-md-7 card-texts">
               <h2 class="card-head-one text-start">
-                A <b>Simply</b> perfecct place to get Lost <b>everone</b>
+                Focuses <b>on who you are,</b> what you do, and where
+                <b>you’re located.</b>
               </h2>
-              <h5>Lorem ipsum dolor, amet consectetur.</h5>
-              <p class="text-start mb-4">
-                Discover the epitome of elegance and history with our Taj Mahal
-                tour package. Immerse yourself in the timeless beauty of this
-                iconic monument, a symbol of love and architectural brilliance.
-                Our expertly crafted itinerary ensures you experience the best
-                of Agra, from guided tours of the Taj Mahal to exploring the
-                rich cultural heritage of the region.
+              <h5 class="para-section">About RACK NOX</h5>
+              <p class="text-start mb-4 para-section">
+                RACK NOX is a trusted stainless steel railing and fabrication
+                shop in Kolkata. We specialize in high-quality railings, gates,
+                and furniture with strong durability, modern design, and skilled
+                craftsmanship to meet residential and commercial customer needs.
               </p>
               <a href="#" class="btn btn-success">contact us</a>
             </div>
           </div>
         </div>
-      </section>
-
-      <!--card-text-section  -->
-      <section class="content-first-card-section">
-        <div class="container mt-5 mb-5 p-4">
+        <!--card-text-section  -->
+        <div class="container mt-5 mb-5">
           <div class="row g-4 animationscrol">
-            <div class="col-md-6" style="height: 22rem">
+            <div class="col-md-7 card-texts">
               <h2 class="card-head-one text-start">
-                Most <b>Popular Tour</b> in india to get <b>package</b>
+                such as <b>quality craftsmanship,</b> durable materials, and
+                <b>customer satisfaction.</b>
               </h2>
-              <h5>Lorem ipsum dolor, amet consectetur.</h5>
-              <p class="text-start mb-4">
+              <h5 class="para-section">Why Choose Us</h5>
+
+              <p class="text-start mb-4 para-section">
                 Discover the epitome of elegance and history with our Taj Mahal
                 tour package. Immerse yourself in the timeless beauty of this
-                iconic monument, a symbol of love and architectural brilliance.
-                Our expertly crafted itinerary ensures you experience the best
-                of Agra, from guided tours of the Taj Mahal to exploring the
-                rich cultural heritage of the region.
+                iconic monument,
               </p>
               <a href="#" class="btn btn-success">contact us</a>
             </div>
-            <div class="col-md-6" style="height: 23rem; overflow: hidden">
-              <img
-                src="assets/image/ptb.png"
-                alt=""
-                style="height: 100%; width: 100%"
-              />
+            <div class="col col-sm-12 col-md-5 p-4 card-texted">
+              <img src="assets/image/ptb.png" alt="" />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- banner-section -->
+      <!-- recommended destination section  -->
       <section class="content-first-card-section">
-        <h2 class="card-head-one text-center">
-          Our <b>Featured Program </b> of The Month
-        </h2>
-        <div class="second-card container-fluid animationscrol">
-          <img class="col-md-12" src="assets/image/b1.png" alt="" />
-        </div>
-      </section>
-
-      <!--  card section  -->
-      <section class="content-first-card-section">
-        <div class="container mt-5 p-4">
-          <h2 class="card-head-one abi">
+        <div class="container mt-5 mb-2">
+          <h2 class="card-head-one text-start">
             Recommended <b>Destinations Tour</b> of the month in india
           </h2>
           <div
@@ -261,20 +298,100 @@
           </div>
         </div>
       </section>
+
+      <!-- rating section  -->
+
+      <section class="content-first-card-section">
+        <div class="container retting-store text-white mt-5 mb-5">
+          <h2 class="card-head-one mb-5">
+            <b>Quality work by satisfied clients</b>
+          </h2>
+
+          <!-- Slider -->
+          <div class="sli">
+            <div class="ratteing-con">
+              <div class="store-star">
+                <i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p>
+                Excellent railing design and finish. Great service by RACK NOX
+              </p>
+              <div class="by-ratting">
+                <div class="stor-img">
+                  <img src="https://i.pravatar.cc/100?img=3" alt="" />
+                </div>
+                <div class="stor-name">
+                  <h5>Atanu Mondal</h5>
+                  <p>Customer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ratteing-con">
+              <div class="store-star">
+                <i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p>
+                Beautiful stainless steel railings. The team delivered on time
+                and with high quality.
+              </p>
+              <div class="by-ratting">
+                <div class="stor-img">
+                  <img src="https://i.pravatar.cc/100?img=5" alt="" />
+                </div>
+                <div class="stor-name">
+                  <h5>Sourav Banerjee</h5>
+                  <p>Customer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ratteing-con">
+              <div class="store-star">
+                <i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>
+                Professional service and strong railing work. Definitely
+                recommend this shop in Kolkata.
+              </p>
+              <div class="by-ratting">
+                <div class="stor-img">
+                  <img src="https://i.pravatar.cc/100?img=7" alt="" />
+                </div>
+                <div class="stor-name">
+                  <h5>Riya Sen</h5>
+                  <p>Customer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrows -->
+          <i class="fa-solid fa-chevron-left arro-left ani2 ms-2"></i>
+          <i class="fa-solid fa-chevron-right arro-right ani2 me-2"></i>
+        </div>
+      </section>
       <!-- banner-section -->
       <section class="content-first-card-section">
         <h2 class="card-head-one text-center">
           Our <b>Featured Program </b> of The Month
         </h2>
         <div class="second-card container-fluid animationscrol">
-          <img class="col-md-12" src="assets/image/b2.png" alt="" />
+          <img class="col-md-12" src="assets/image/b1.png" alt="" />
         </div>
       </section>
-      <!--  card section  -->
+      <!-- luxury trains  -->
       <section class="content-first-card-section">
-        <div class="container mb-5 p-4">
-          <h2 class="card-head-one text-end">
-            Experience <b>Luxury Trains</b> in india
+        <div class="container mt-5 mb-2">
+          <h2 class="card-head-one text-start">
+            Recommended <b>Destinations Tour</b> of the month in india
           </h2>
           <div
             class="row row-cols-2 row-cols-md-3 row-cols-lg-4 animationscrol"
@@ -310,30 +427,159 @@
           </div>
         </div>
       </section>
+      <!-- address  -->
+      <section class="content-first-card-section">
+        <div class="container mt-5 mb-2 p-4">
+          <div class="row row-cols-1 row-cols-lg-2 offset-1 animationscrol">
+            <div class="col mb-4 text-white">
+              <p>GET IN TOUCH</p>
+              <h3>Visit one of out agency location or contact us today</h3>
+
+              <div class="left-text-content mt-5">
+                <li>
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  <p>
+                    <a
+                      href="https://www.google.com/maps/place/Elitte+Institute+of+Engineering+%26+Management/@22.714872,88.4136095,17z/data=!4m16!1m9!3m8!1s0x39f899496b04114f:0x44c94509fa83f16a!2sElitte+Institute+of+Engineering+%26+Management!8m2!3d22.714872!4d88.4161844!9m1!1b1!16s%2Fg%2F11fxd_qlrn!3m5!1s0x39f899496b04114f:0x44c94509fa83f16a!8m2!3d22.714872!4d88.4161844!16s%2Fg%2F11fxd_qlrn?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+                      target="_blank"
+                      >Elitte Institute of Engineering & Management
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <p>
+                    <a
+                      href="https://wa.me/916290988781
+"
+                      target="_blank"
+                    >
+                     6290988781
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>
+                    <a href="https://google.com" target="_blank"
+                      >eiemcstofficial@gmail.com
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-clock"></i>
+                  <p><a href="#">Open 9:30am - 2-30pm</a></p>
+                </li>
+              </div>
+            </div>
+            <div class="col col-md-6 map-responsive">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.3595955953624!2d88.41360947530465!3d22.71487197939059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f899496b04114f%3A0x44c94509fa83f16a!2sElitte%20Institute%20of%20Engineering%20%26%20Management!5e0!3m2!1sen!2sin!4v1764044576990!5m2!1sen!2sin" 
+                width="450"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- form section  -->
+      <section class="content-first-card-section">
+        <div class="form-container text-white">
+          <div class="row mt-3">
+            <div class="col-10 offset-1">
+              <h2 class="card-head-one text-start"><b>Contact Us</b></h2>
+              <form id="contactForm" class="chenging">
+                <div class="md-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="md-3 mt-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="row mt-3">
+                  <div class="mb-3 col-md-8">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Email"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+
+                  <div class="md-3 col-md-4">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input
+                      type="text"
+                      id="subject"
+                      placeholder="Subject"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="md-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Your Message"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+                <button class="btn mt-3" type="submit">Send on WhatsApp</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- footer section  -->
     <footer class="container-fluid">
       <div class="container text-start p-4 mb-3">
-        <div class="row">
-          <div class="col-md-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <div class="col col-md-6">
             <div class="logo d-flex justify-content-start">
               <img src="assets/image/logo.png" alt="logo" />
-              <h2>Trustweb</h2>
+              <h2>RACK NOX</h2>
             </div>
-            <h5 class="mb-3">About Us</h5>
+            <h5 class="col-sm-8 col-md-6">About Us</h5>
             <p>
-              Touristweb is your trusted travel partner, offering unforgettable
-              experiences across India. Explore our curated packages and embark
-              on a journey of a lifetime.
+              This website made by NaniMadhab Sarkar. That is my creation
+              racknox creation is a stainless steel railing and grill shop in
+              kolkata. We provide all types of stainless steel railing and grill
+              solutions at an affordable price with best quality.
             </p>
           </div>
-          <div class="col-sm-3 mt-5 pt-3">
+          <div class="col-sm-6 mt-5 pt-3">
             <h5 class="mb-3">Quick Links</h5>
             <ul class="list-unstyled">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="col-sm-3 mt-5 pt-3">
@@ -341,18 +587,37 @@
             <p>nanimadhdbsarkar@gmail.com</p>
 
             <h5 class="mb-3">Whatsapp</h5>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i>+91 62909 88781</a>
+            <a
+              href="https://wa.me/916290988781
+"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i>+91 62909 88781</a
+            >
           </div>
           <div class="col-lg-3 mt-5 pt-3">
             <h5 class="mb-3">Follow Us</h5>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a
+              href="https://www.facebook.com/share/17b46bbNag/ "
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://github.com/Nanimadhab" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/invites/contact/?igsh=1nz11anooe5mk&utm_content=z8pj97o "
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/nanimadhabsarkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
           </div>
         </div>
       </div>
-      <p>&copy; 2023 Touristweb. All rights reserved.</p>
+      <p>&copy;2025 HTML,CSS,JS Template BY nanimadhabsarkar</p>
     </footer>
     <!-- Bootstrap script -->
     <script
@@ -360,5 +625,8 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <!-- script link -->
+    <script src="assets/copy.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
