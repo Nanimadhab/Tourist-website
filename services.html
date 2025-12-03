@@ -19,6 +19,10 @@
       rel="stylesheet"
     />
 
+    <!-- tab bar logo  -->
+
+    <link rel="shortcut icon" href="assets/image/logo.png" />
+
     <!-- Bootstrap link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -28,7 +32,7 @@
     />
     <!-- style link -->
     <link rel="stylesheet" href="assets/style.css" />
-    <title>RACK NOX</title>
+    <title>অচেনা পথ</title>
   </head>
   <body>
     <!-- head section  -->
@@ -38,7 +42,7 @@
           <!-- Logo -->
           <div class="logo">
             <img src="assets/image/logo.png" alt="logo" />
-            <h2>RACK NOX</h2>
+            <h2>অচেনা পথ</h2>
           </div>
 
           <!-- Sidebar / Navigation Menu -->
@@ -49,10 +53,12 @@
               <h2>RACK NOX</h2>
             </div>
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="services.html " class="active">Services</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="download.html">Download</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html" class="btn btn-warning">Explore</a></li>
+            <li><a href="services.html" class="btn btn-warning">Explore</a></li>
 
             <div class="container nav-location">
               <h2>
@@ -74,11 +80,11 @@
                 <i class="fa-solid fa-phone"></i>
 
                 <a
-                  href="https://wa.me/918697575839
+                  href="https://wa.me/9162907988781
 "
                   target="_blank"
                 >
-                  8697575839
+                  +91 62907 988781
                 </a>
               </li>
               <li>
@@ -100,963 +106,97 @@
         </div>
       </div>
     </header>
-    <!--  card section  -->
     <main>
-      <section class="content-first-card-section">
-        <div class="container mt-5 mb-2 p-4 ani">
-          <h2 class="card-head-one text-center">
-            <p>There is our all product</p>
-            Most <b>Popular Tour</b> in india
-          </h2>
-          <div
-            class="row row-cols-2 row-cols-md-3 row-cols-lg-4 animationscrol"
-          >
-            <div class="card col">
-              <a href="reilngs.html">
-                <img
-                  src="assets/image/p3.png"
-                  class="card-img-top"
-                  alt="tajmahal-image"
-                />
-              </a>
-              <div class="card-body">
-                <p class="card-text">
-                  STAINLESS STELL <br />
-                  STAIR RAILINGS
-                </p>
-              </div>
-            </div>
-            <div class="card col">
-              <a href="mainGate.html">
-                <img
-                  src="assets/image/P6.jpg"
-                  class="card-img-top"
-                  alt="tajmahal-image"
-              /></a>
+      <!-- background video section  -->
+      <section>
+        <div class="background-viedo">
+          <!-- background-viedo  -->
+          <video
+            class="hero-video"
+            autoplay=""
+            loop=""
+            muted=""
+            src="assets/video/background4.mp4"
+            type="video/mp4"
+          ></video>
 
-              <div class="card-body">
-                <p class="card-text">
-                  STAINLESS STELL <br />
-                  MAIN GATE
-                </p>
+          <!-- text and buttons on video section -->
+
+          <div class="container mt-5 mb-2">
+            <h2 class="card-head-one text-start">
+              our <b>Popular services</b> in world
+            </h2>
+
+            <div
+              class="row gap row-cols-1 row-cols-md-2 row-cols-lg-2 animationscrol"
+            >
+              <div >
+                <a class="link-travel" href="Domestic.html">
+                  <div
+                    class="cardee card col d-flex justify-content-end ani2 "
+                    onmouseenter="playeVideo()"
+                    onmouseleave="pauseeVideo()"
+                    style="width: auto;"
+                  >
+                    <video
+                      id="hover1Video"
+                      src="assets/video/background7.mp4"
+                      muted
+                    ></video>
+
+                    <h2 class="card-title text-white">Domestic</h2>
+                  </div>
+                </a>
               </div>
-            </div>
-            <div class="card col">
-              <a href="slndowsGrill.html">
-                <img
-                  src="assets/image/p4.png"
-                  class="card-img-top"
-                  alt="tajmahal-image"
-              /></a>
-              <div class="card-body">
-                <p class="card-text">
-                  SINDOWS GRILL <br />
-                  DESIGNS
-                </p>
-              </div>
-            </div>
-            <div class="card col">
-              <a href="balcony.html">
-                <img
-                  src="assets/image/p5.png"
-                  class="card-img-top"
-                  alt="tajmahal-image"
-              /></a>
-              <div class="card-body">
-                <p class="card-text">
-                  BALCONY RAILING <br />
-                  SOLUTIONS
-                </p>
+              <div >
+                <a class="link-travel" href="International.html">
+                  <div
+                    class="cardee card col d-flex justify-content-end ani2"
+                    onmouseenter="playVideo()"
+                    onmouseleave="pauseVideo()"
+                    style="width: auto;"
+                  >
+                    <video
+                      id="hoverVideo"
+                      src="assets/video/background8.mp4"
+                      muted
+                    ></video>
+
+                    <h2 class="card-title text-black">Internatinol</h2>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!--  raling section  -->
-      <section class="content-first-card-section">
-        <div class="container mt-5 p-4">
-          <h2 class="card-head-one abi">
-            Recommended <b>Destinations Tour</b> of the month in india
-          </h2>
+          <!-- button  -->
+          <span>
+            <a href="contact.html" class="btn btn-success chenge-color"
+              >contact us</a
+            >
+            <a
+              href="https://wa.me/916290988781
+"
+              target="_blank"
+              class="btn btn-outline-success chenge-color tr"
+              >get WhatsApp</a
+            >
+          </span>
 
-          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
-            <div class="card col">
-              <img
-                src="assets/image/R1.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R2.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R3.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R4.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R5.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R6.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R7.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R8.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R9.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R10.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R11.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R12.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R13.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R14.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R15.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R16.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R17.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R18.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R19.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R20.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R21.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R22.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R23.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R24.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R25.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R26.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R27.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R28.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R29.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R30.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R31.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R32.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/R33.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/p3.png"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--  gate section  -->
-      <section class="content-first-card-section">
-        <div class="container mt-5 p-4">
-          <h2 class="card-head-one abi">
-            Recommended <b>Destinations Tour</b> of the month in india
-          </h2>
-
-          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
-            <div class="card col">
-              <img
-                src="assets/image/G1.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G2.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G3.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G4.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G5.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G6.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G7.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G8.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G9.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G10.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G11.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G12.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G13.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G14.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G15.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G16.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G17.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G18.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G19.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G20.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G21.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G22.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G23.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G24.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G25.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G26.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G27.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G28.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G29.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G30.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/G31.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--  SLIDER section  -->
-      <section class="content-first-card-section">
-        <div class="container mt-5 p-4">
-          <h2 class="card-head-one abi">
-            Recommended <b>Destinations Tour</b> of the month in india
-          </h2>
-
-          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
-            <div class="card col">
-              <img
-                src="assets/image/S1.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S2.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S3.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S4.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S5.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S6.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S7.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S8.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S9.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S10.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S11.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S12.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S13.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S14.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S15.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S16.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S17.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S18.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/S19.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--  BALCONY section  -->
-      <section class="content-first-card-section">
-        <div class="container mt-5 p-4">
-          <h2 class="card-head-one abi">
-            Recommended <b>Destinations Tour</b> of the month in india
-          </h2>
-
-          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
-            <div class="card col">
-              <img
-                src="assets/image/BAL1.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL2.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL3.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL4.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL5.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL6.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL7.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL8.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL9.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL10.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL11.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL12.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL13.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL14.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL15.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL16.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL17.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL18.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL19.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL20.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL21.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL22.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL23.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL24.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL25.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL26.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL27.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL28.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL29.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL30.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL31.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL32.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL33.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-            <div class="card col">
-              <img
-                src="assets/image/BAL34.jpg"
-                class="card-img-top"
-                alt="tajmahal-image"
-              />
-            </div>
-          </div>
+          <!-- left right chenging icons -->
         </div>
       </section>
     </main>
     <!-- footer section  -->
     <footer class="container-fluid">
       <div class="container text-start p-4 mb-3">
-        <div class="row">
-          <div class="col-md-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <div class="col col-md-6">
             <div class="logo d-flex justify-content-start">
               <img src="assets/image/logo.png" alt="logo" />
-              <h2>RACK NOX</h2>
+              <h2>অচেনা পথ</h2>
             </div>
-            <h5 class="mb-3">About Us</h5>
+            <h5 class="col-sm-8 col-md-6">About Us</h5>
             <p>
               This website made by NaniMadhab Sarkar. That is my creation
               racknox creation is a stainless steel railing and grill shop in
@@ -1064,13 +204,13 @@
               solutions at an affordable price with best quality.
             </p>
           </div>
-          <div class="col-sm-3 mt-5 pt-3">
+          <div class="col-sm-6 mt-5 pt-3">
             <h5 class="mb-3">Quick Links</h5>
             <ul class="list-unstyled">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="col-sm-3 mt-5 pt-3">
@@ -1111,11 +251,35 @@
       <p>&copy;2025 HTML,CSS,JS Template BY nanimadhabsarkar</p>
     </footer>
     <!-- Bootstrap script -->
+    <script>
+      const video = document.getElementById("hoverVideo");
+      const videos = document.getElementById("hover1Video");
+
+      function playVideo() {
+        video.play();
+      }
+
+      function pauseVideo() {
+        video.pause();
+        video.currentTime = 0; // reset
+      }
+
+      function playeVideo() {
+        videos.play();
+      }
+
+      function pauseeVideo() {
+        videos.pause();
+        videos.currentTime = 0; // reset
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <!-- script link -->
     <script src="assets/copy.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
