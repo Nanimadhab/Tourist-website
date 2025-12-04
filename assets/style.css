@@ -500,9 +500,14 @@
 }
 /* form  */
 form input,
-form textarea {
+form textarea,
+select{
   background-color: transparent !important;
   color: #e1dcdcef !important;
+}
+select option{
+  background-color: black !important;
+  color: white !important;
 }
 
 /* service-card-section  */
