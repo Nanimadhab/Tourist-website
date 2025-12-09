@@ -381,16 +381,14 @@
 }
 .alert-box p {
   color: #fff;
-  
 }
-.alert-box p b{
+.alert-box p b {
   color: rgba(7, 4, 1, 0.967);
 }
 
 .alert-box.show {
   transform: translate(-50%, -50%) scale(1);
 }
-
 
 .alert-box button {
   margin-top: 15px;
@@ -501,11 +499,11 @@
 /* form  */
 form input,
 form textarea,
-select{
+select {
   background-color: transparent !important;
   color: #e1dcdcef !important;
 }
-select option{
+select option {
   background-color: black !important;
   color: white !important;
 }
@@ -799,5 +797,249 @@ footer a:hover {
   /* banner */
   .second-card img {
     height: 60%;
+  }
+}
+
+/* text animation */
+
+h2.card-head-one {
+  font-size: 9vmin;
+  color: #8bf;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  margin: 1rem 0 1rem 2rem;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%,
+  27.3488% {
+    content: "";
+  }
+  1.1395%,
+  26.2093% {
+    content: "p";
+  }
+  2.2791%,
+  25.0698% {
+    content: "po";
+  }
+  3.4186%,
+  23.9302% {
+    content: "pop";
+  }
+  4.5581%,
+  22.7907% {
+    content: "popu";
+  }
+  5.6977%,
+  21.6512% {
+    content: "popul";
+  }
+  6.8372%,
+  20.5116% {
+    content: "popular";
+  }
+  7.9767%,
+  19.3721% {
+    content: "popular ";
+  }
+  9.1163%,
+  18.2326% {
+    content: "popular s";
+  }
+  10.2558%,
+  17.0930% {
+    content: "popular se";
+  }
+  11.3953%,
+  15.9535% {
+    content: "popular ser";
+  }
+  12.5349%,
+  14.8139% {
+    content: "popular serv";
+  }
+  13.6744%,
+  13.6744% {
+    content: "popular servi";
+  }
+  14.8139%,
+  12.5349% {
+    content: "popular servic";
+  }
+  15.9535%,
+  11.3953% {
+    content: "popular service";
+  }
+  17.0930%,
+  10.2558% {
+    content: "popular services ";
+  }
+  18.2326%,
+  9.1163% {
+    content: "popular services";
+  }
+
+  30.7674%,
+  51.2791% {
+    content: "";
+  }
+  31.9070%,
+  50.1395% {
+    content: "D";
+  }
+  33.0465%,
+  49.0000% {
+    content: "Do";
+  }
+  34.1860%,
+  47.8605% {
+    content: "Dom";
+  }
+  35.3256%,
+  46.7209% {
+    content: "Dome";
+  }
+  36.4651%,
+  45.5814% {
+    content: "Domes";
+  }
+  37.6047%,
+  44.4419% {
+    content: "Domest";
+  }
+  38.7442%,
+  43.3023% {
+    content: "Domesti";
+  }
+  39.8837%,
+  42.1628% {
+    content: "Domestic";
+  }
+  41.0233%,
+  41.0233% {
+    content: "Domestic ";
+  }
+
+  55.6279%,
+  97.9991% {
+    content: "";
+  }
+  56.6279%,
+  96.8605% {
+    content: "I";
+  }
+  57.7674%,
+  95.7209% {
+    content: "In";
+  }
+  58.9069%,
+  94.5814% {
+    content: "Int";
+  }
+  59.0465%,
+  93.4419% {
+    content: "Inte";
+  }
+  60.1860%,
+  92.3023% {
+    content: "Inter";
+  }
+  61.3256%,
+  91.1628% {
+    content: "Intern";
+  }
+  62.4651%,
+  90.0233% {
+    content: "Interna";
+  }
+  63.6047%,
+  88.8837% {
+    content: "Internat";
+  }
+  64.7442%,
+  87.7442% {
+    content: "Internati";
+  }
+  65.8837%,
+  86.6047% {
+    content: "Internatio";
+  }
+  66.0233%,
+  85.4651% {
+    content: "Internation";
+  }
+  67.1628%,
+  84.3256% {
+    content: "Internationa";
+  }
+  68.3023%,
+  83.1860% {
+    content: "International";
+  }
+  69.4419%,
+  82.0465% {
+    content: "International ";
+  }
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+
+  @keyframes sequencePopup {
+    0%,
+    100% {
+      content: "developer";
+    }
+    25% {
+      content: "writer";
+    }
+    50% {
+      content: "reader";
+    }
+    75% {
+      content: "human";
+    }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
   }
 }
